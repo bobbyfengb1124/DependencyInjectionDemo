@@ -9,13 +9,9 @@ import guru.springframework.services.GreetingService;
 public class PropertyInjectedController {
 
 	@Autowired
-	public GreetingService greetingService;
+	public GreetingService greetingServiceImpl;
 
 	public String sayHello() {
-		return getGreetingService().sayGreeting();
-	}
-
-	public GreetingService getGreetingService() {
-		return greetingService;
+		return greetingServiceImpl.sayGreeting();
 	}
 }
