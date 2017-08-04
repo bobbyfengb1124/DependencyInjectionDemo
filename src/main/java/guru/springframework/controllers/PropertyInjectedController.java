@@ -9,6 +9,7 @@ import guru.springframework.services.GreetingService;
 public class PropertyInjectedController {
 
 	@Autowired
+	// @Qualifier("greetingServiceImpl")
 	public GreetingService greetingServiceImpl;
 
 	public String sayHello() {
