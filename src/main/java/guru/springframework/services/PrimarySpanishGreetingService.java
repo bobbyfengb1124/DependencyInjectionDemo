@@ -1,7 +1,7 @@
 /**
  * @Author Feng Bo
- * @Email bobbyfeng@cse-global.com
- * @Date 4 Aug 20172:15:31 pm
+ * 
+ * @Date 4 Aug 2017 3:03:25 pm
  */
 package guru.springframework.services;
 
@@ -13,9 +13,9 @@ import org.springframework.stereotype.Service;
  * 
  */
 @Service
+@Profile("es")
 @Primary
-@Profile({ "en", "default" })
-public class PrimaryGreetingService implements GreetingService {
+public class PrimarySpanishGreetingService implements GreetingService {
 
 	/*
 	 * (non-Javadoc)
@@ -24,7 +24,7 @@ public class PrimaryGreetingService implements GreetingService {
 	 */
 	@Override
 	public String sayGreeting() {
-		return "Hello - Primary Greeting service";
+		return "Hola - Servicio de Saludo Primario";
 	}
 
 }
