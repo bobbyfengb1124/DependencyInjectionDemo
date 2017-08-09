@@ -1,14 +1,13 @@
 /**
  * @Author Feng Bo
- * @Date 9 Aug 2017 10:55:44 am
+ * @Date 9 Aug 2017 11:55:24 am
  */
 package guru.springframework.examplebeans;
 
 /**
  * 
  */
-public class FakeDataSource {
-
+public class FakeJmsBroker {
 	private String user;
 	private String password;
 	private String url;
