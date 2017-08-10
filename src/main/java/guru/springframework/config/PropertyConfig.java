@@ -15,11 +15,12 @@ import guru.springframework.examplebeans.FakeJmsBroker;
 /**
  * 
  */
-@Configuration
+// @Configuration
 // @PropertySource({ "classpath:datasource.properties",
 // "classpath:jms.properties" })
 // @PropertySources({ @PropertySource("classpath:datasource.properties"),
 // @PropertySource("classpath:jms.properties") })
+@Configuration
 public class PropertyConfig {
 
 	// @Autowired
